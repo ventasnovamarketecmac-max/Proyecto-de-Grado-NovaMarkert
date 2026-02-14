@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Market | Contáctanos</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="area">
+        <ul class="circles">
+            <li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li>
+        </ul>
+    </div>
+
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <h1>Nova <span>Market</span></h1>
+            </div>
+            <nav class="navbar">
+                <a href="index.html">Inicio</a>
+                <div class="dropdown">
+                    <a href="index.html#categorias" class="dropbtn">Categorías ▾</a>
+                    
+                    <div class="dropdown-content">
+                        <a href="tecnologia.html">Tecnología y Accesorios</a>
+                        <a href="hogar.html">Hogar y Cocina</a>
+                        <a href="Papeleria.html">Papeleria y Oficina</a>
+                        <a href="moda.html">Moda y Belleza</a>
+                        <a href="Ferreteria.html">Ferretería y Herramientas</a>
+                        <a href="jugueteria.html">Juguetes y Más</a>
+                    </div>
+                </div>
+                <a href="index.html#productos">Productos</a>
+                <a href="contacto.html" class="active-link">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container section-padding">
+        <h2 class="section-title">Ponte en <span class="text-purple">Contacto</span></h2>
+        <p style="text-align: center; margin-bottom: 50px;">¿Tienes dudas sobre un producto? ¡Escríbenos!</p>
+
+        <div class="contact-wrapper">
+            
+            <div class="contact-info">
+                <div class="info-box">
+                    <div class="icon-box">📍</div>
+                    <div class="details">
+                        <h3>Ubicación</h3>
+                        <p>Machala, El Oro, Ecuador.</p>
+                        <p>Siempre Online, siempre accesible</p>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <div class="icon-box">📱</div>
+                    <div class="details">
+                        <h3>WhatsApp Directo</h3>
+                        <p>+593 99 315 3203</p>
+                        <p>Atención Lun-Sáb 9am - 7pm</p>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <div class="icon-box">✉️</div>
+                    <div class="details">
+                        <h3>Correo Electrónico</h3>
+                        <p>ventas.novamarketecmac@gmail.com</p>
+                        <p>No te abstengas de contactar con nosotros!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <h3>Envíanos un mensaje</h3>
+                <form action="mailto:ventas@novamarket.ec" method="post" enctype="text/plain" class="form-style" onsubmit="setTimeout(() => this.reset(), 1000)">
+    
+                    <div class="input-group">
+                        <label for="nombre">Tu Nombre</label>
+                        <input type="text" id="nombre" namee="nombre" placeholder="Ej: Apellido1 Apellido2 Nombre1 Nombre2" 
+                            pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+" title="Por favor, usa solo letras (no números)" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="email">Tu Correo</label>
+                        <input type="email" id="email" name="contacto" placeholder="ejemplo@correo.com" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="¿En qué podemos ayudarte?" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary form-btn">Enviar Mensaje</button>
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Nova Market - Machala. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
